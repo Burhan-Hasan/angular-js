@@ -30,7 +30,7 @@ export class TableComponent {
         return this._products.slice(0, this.Row);
     }
 
-    deleteRow($event: any, item: any) {
-        console.log($event, item);
+    deleteRow($event: any) {
+        $event.target.closest('tr').remove();
     }
 }
