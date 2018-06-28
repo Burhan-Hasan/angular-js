@@ -5,8 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="systemjs.config.extras.js" />
-    <Content Include="systemjs.config.js" />
+    <Content Remove="wwwroot\app\table\my-row.component.html" />
+    <Content Remove="wwwroot\app\table\my-row.component.js" />
+    <Content Remove="wwwroot\app\table\my-row.component.js.map" />
+    <Content Remove="wwwroot\app\table\my-row.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +17,15 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\systemjs.config.extras.js" />
+    <None Include="wwwroot\systemjs.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\app\router\" />
   </ItemGroup>
 
 </Project>

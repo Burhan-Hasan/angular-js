@@ -1,0 +1,10 @@
+﻿p {
+    text-decoration: underline;
+    color: red;
+}
+
+
+:host /deep/ p {
+    color: red;
+    text-decoration: underline;
+}
