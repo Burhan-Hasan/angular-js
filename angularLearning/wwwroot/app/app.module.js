@@ -8,8 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
 var index_1 = require("./index");
 var AppModule = (function () {
     function AppModule() {
@@ -19,15 +17,10 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
-            platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot([
-                { path: 'home', component: index_1.HomePageComponent },
-                { path: 'about', component: index_1.AboutPageComponent },
-                { path: '', redirectTo: 'home', pathMatch: 'full' }
-            ])
+            platform_browser_1.BrowserModule
         ],
-        declarations: [app_component_1.AppComponent, index_1.HomePageComponent, index_1.AboutPageComponent, index_1.SubComponent, index_1.CounterComponent, index_1.TableComponent],
-        bootstrap: [app_component_1.AppComponent]
+        declarations: [index_1.AppComponent],
+        bootstrap: [index_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;
