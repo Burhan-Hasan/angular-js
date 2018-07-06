@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { HomeComponent }  from './components/home/home.component';
-import { AppComponent } from './index';
+import { AppComponent, HomeComponent, CarComponent, CarsComponent } from './index';
 import { CarModelService } from './services/car.model.service';
 
 import { routes } from './app.routes';
@@ -12,7 +11,7 @@ import { routes } from './app.routes';
         BrowserModule,
         RouterModule.forRoot(routes)
     ],
-    declarations: [AppComponent, HomeComponent],
+    declarations: [AppComponent, HomeComponent, CarComponent, CarsComponent],
     bootstrap: [AppComponent],
     providers: [CarModelService]
 })

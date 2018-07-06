@@ -12,15 +12,14 @@ export const routes: Routes = [
     {
         path: "home",
         component: HomeComponent
+    },
+    {
+        path: "cars",
+        component: CarsComponent
+    },
+    {
+        path: "car/:id",
+        component: CarComponent
     }
-    //,
-    //{
-    //    path: "cars",
-    //    component: CarsComponent
-    //},
-    //{
-    //    path: "car/:id",
-    //    component: CarComponent
-    //}
 
 ];

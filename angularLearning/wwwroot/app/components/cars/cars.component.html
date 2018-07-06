@@ -1,5 +1,5 @@
 ﻿<nav>
-    <div *ngFor="let car in _cars">
+    <div *ngFor="let car of _cars">
         <a routerLink="/car/{{car.id}}">{{car.name}}</a>
     </div>
 </nav>

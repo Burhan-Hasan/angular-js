@@ -23,7 +23,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(app_routes_1.routes)
         ],
-        declarations: [index_1.AppComponent],
+        declarations: [index_1.AppComponent, index_1.HomeComponent, index_1.CarComponent, index_1.CarsComponent],
         bootstrap: [index_1.AppComponent],
         providers: [car_model_service_1.CarModelService]
     })
