@@ -8,7 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
 var index_1 = require("./index");
+var car_model_service_1 = require("./services/car.model.service");
+var app_routes_1 = require("./app.routes");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,10 +20,12 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
-            platform_browser_1.BrowserModule
+            platform_browser_1.BrowserModule,
+            router_1.RouterModule.forRoot(app_routes_1.routes)
         ],
         declarations: [index_1.AppComponent],
-        bootstrap: [index_1.AppComponent]
+        bootstrap: [index_1.AppComponent],
+        providers: [car_model_service_1.CarModelService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
