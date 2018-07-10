@@ -9,8 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
+var home_component_1 = require("./components/home/home.component");
 var index_1 = require("./index");
-var car_model_service_1 = require("./services/car.model.service");
 var app_routes_1 = require("./app.routes");
 var AppModule = (function () {
     function AppModule() {
@@ -23,9 +23,9 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(app_routes_1.routes)
         ],
-        declarations: [index_1.AppComponent],
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent],
         bootstrap: [index_1.AppComponent],
-        providers: [car_model_service_1.CarModelService]
+        providers: [CarModelService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
