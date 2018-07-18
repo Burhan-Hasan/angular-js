@@ -15,7 +15,20 @@
         System.import('/app/main.js').catch(function (err) { console.error(err); });
     </script>
     <base href="/" />
-
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 50px 50px 50px 200px;
+            height: 100%;
+            font-family: Arial;
+        }
+    </style>
 </head>
 <body>
     @RenderBody()

@@ -1,0 +1,53 @@
+﻿nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #252525;
+    color: #999;
+    box-sizing:border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    display: block;
+    color: #999;
+    padding: 10px;
+    text-decoration: none;
+}
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+#logo {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+    #logo img {
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+h4 {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 10px;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
