@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var router_1 = require("@angular/router");
 var home_component_1 = require("./components/home/home.component");
 var index_1 = require("./index");
-var app_routes_1 = require("./app.routes");
+var forms_1 = require("@angular/forms");
+//import { routes } from './app.routes';
+var root_routes_module_1 = require("./root-routes.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,11 +22,11 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot(app_routes_1.routes)
+            root_routes_module_1.RootRouterModule,
+            forms_1.FormsModule
         ],
-        declarations: [index_1.AppComponent, home_component_1.HomeComponent],
-        bootstrap: [index_1.AppComponent],
-        providers: [CarModelService]
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent],
+        bootstrap: [index_1.AppComponent]
     })
 ], AppModule);
 exports.AppModule = AppModule;
