@@ -1,0 +1,12 @@
+﻿<h1>Example 2</h1>
+<div>
+    <div>
+        Expeditor: <input #example2InputName />
+        <button (click)="addToList(example2InputName.value)">Add to list</button>
+    </div>
+    <ul>
+        <li *ngFor="let exp of expeditors">
+            {{exp}}
+        </li>
+    </ul>
+</div>
