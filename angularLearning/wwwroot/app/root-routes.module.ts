@@ -1,7 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { Example1Component, Example2Component, TdfComponent } from './index';
+import { Example1Component, Example2Component, TdfComponent, MdfComponent } from './index';
 
 @NgModule({
     imports: [
@@ -20,6 +20,11 @@ import { Example1Component, Example2Component, TdfComponent } from './index';
                 path: 'tdf',
                 pathMatch: 'full',
                 component: TdfComponent
+            }
+            , {
+                path: 'mdf',
+                pathMatch: 'full',
+                component: MdfComponent
             }
         ])
     ],

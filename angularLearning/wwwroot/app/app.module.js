@@ -23,9 +23,10 @@ AppModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             root_routes_module_1.RootRouterModule,
-            forms_1.FormsModule
+            forms_1.FormsModule,
+            forms_1.ReactiveFormsModule
         ],
-        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent],
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent],
         bootstrap: [index_1.AppComponent]
     })
 ], AppModule);
