@@ -1,0 +1,29 @@
+﻿<div class="pure-g">
+    <button class="pure-button pure-button-primary" (click)="loadData($event)">
+        загрузить данные
+    </button>
+</div>
+<div class="pure-g marg-vert">
+    <div class="pure-u-1-2">
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>производитель</th>
+                    <th>модель</th>
+                    <th>год</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="pure-table-odd" *ngFor="let car of _cars">
+                    <td>{{car.id}}</td>
+                    <td>{{car.manufacturer}}</td>
+                    <td>{{car.model}}</td>
+                    <td>{{car.year}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="pure-u-1-2"></div>
+</div>

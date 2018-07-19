@@ -11,6 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var home_component_1 = require("./components/home/home.component");
 var index_1 = require("./index");
 var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http"); //������ ��������� ��������� http ������. (������ ��� �������� � ����� http_get.component.ts)
 //import { routes } from './app.routes';
 var root_routes_module_1 = require("./root-routes.module");
 var AppModule = (function () {
@@ -24,9 +25,10 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             root_routes_module_1.RootRouterModule,
             forms_1.FormsModule,
-            forms_1.ReactiveFormsModule
+            forms_1.ReactiveFormsModule,
+            http_1.HttpModule
         ],
-        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent],
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent],
         bootstrap: [index_1.AppComponent]
     })
 ], AppModule);

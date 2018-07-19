@@ -1,3 +1,3 @@
 ﻿export class Car {
-    constructor(public id: number, public name: string, public speed: number) { }
+    constructor(public Id: number, public Manufacturer: string, public Model: string, public Year: number) { }
 }

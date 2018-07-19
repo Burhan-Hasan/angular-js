@@ -1,11 +1,11 @@
 ﻿<div class="container">
     <form (ngSubmit)="onSubmit()" #userForm="ngForm">
-        Id: <input type="text" required [(ngModel)]="car.id" name="id"/><br />
-        Name: <input type="text" required [(ngModel)]="car.name" #fieldName="ngModel" name="name"/><br />
+        Id: <input type="text" required [(ngModel)]="car.Id" name="id"/><br />
+        Name: <input type="text" required [(ngModel)]="car.Model" #fieldName="ngModel" name="model"/><br />
         <p [hidden]="fieldName.valid">
             Sehv var
         </p>
-        Speed: <input type="text" required [(ngModel)]="car.speed" name="speed"/>
+        Speed: <input type="text" required [(ngModel)]="car.year" name="year"/>
         <hr />
         <button (click)="showCar($event)">Show Car</button>
         <hr />

@@ -1,7 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { Example1Component, Example2Component, TdfComponent, MdfComponent } from './index';
+import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent } from './index';
 
 @NgModule({
     imports: [
@@ -25,6 +25,11 @@ import { Example1Component, Example2Component, TdfComponent, MdfComponent } from
                 path: 'mdf',
                 pathMatch: 'full',
                 component: MdfComponent
+            }
+            , {
+                path: 'http',
+                pathMatch: 'full',
+                component: HttpGetComponent
             }
         ])
     ],

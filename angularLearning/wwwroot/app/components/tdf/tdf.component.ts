@@ -9,7 +9,7 @@ import { Car } from '../../entities/car';
 })
 export class TdfComponent
 {
-    car: Car = new Car(1, "BMW", 380);
+    car: Car = new Car(1, "BMW","M3", 380);
 
     carDetails: string = "Empty";
 
@@ -17,7 +17,7 @@ export class TdfComponent
 
     showCar()
     {
-        this.carDetails = this.car.id + ' | ' + this.car.name + ' | ' + this.car.speed
+        this.carDetails = this.car.Id + ' | ' + this.car.Model + ' | ' + this.car.Year
     }
 
     onSubmit()
