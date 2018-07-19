@@ -16,8 +16,7 @@
                     <label for="age">Age</label>
                     <input id="age" name="age" type="number" placeholder="Age" formControlName="age" min="10" max="100">
                     <span class="pure-form-message-inline" *ngIf="registrationForm.get('age').hasError('required')">Обязательное поле</span>
-                    <span class="pure-form-message-inline" *ngIf="registrationForm.get('age').hasError('min')">Bозраст должен быть выше 10</span>
-                    <span class="pure-form-message-inline" *ngIf="registrationForm.get('age').hasError('max')">Bозраст должен быть меньше 100</span>
+                    <span class="pure-form-message-inline" *ngIf="registrationForm.get('age').hasError('rangevalidator')">Bозраст должен быть выше 10 и меньше 100</span>
                 </div>
 
                 <div class="pure-control-group">
