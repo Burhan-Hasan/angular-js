@@ -28,7 +28,7 @@ AppModule = __decorate([
             forms_1.ReactiveFormsModule,
             http_1.HttpModule
         ],
-        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent],
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent],
         bootstrap: [index_1.AppComponent]
     })
 ], AppModule);

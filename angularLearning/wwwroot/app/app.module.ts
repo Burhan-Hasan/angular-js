@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { AppComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent } from './index';
+import { AppComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent } from './index';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http'; //модуль позволяет инжектить http сервис. (сервис был применен в файле http_get.component.ts)
 
@@ -18,7 +18,7 @@ import { RootRouterModule } from './root-routes.module';
         ReactiveFormsModule,
         HttpModule
     ],
-    declarations: [AppComponent, HomeComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent],
+    declarations: [AppComponent, HomeComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

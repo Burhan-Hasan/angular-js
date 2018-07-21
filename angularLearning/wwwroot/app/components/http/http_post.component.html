@@ -1,0 +1,49 @@
+﻿<div class="pure-g">
+    <div class="pure-u-1-2 pure-form pure-form-aligned">
+        <div class="pure-control-group">
+            <label for="id">Id</label>
+            <input type="number" name="id" value="" [(ngModel)]="_car.Id"/>
+        </div>
+        <div class="pure-control-group">
+            <label for="manufacturer">производитель</label>
+            <input type="text" name="manufacturer" value="" [(ngModel)]="_car.Manufacturer" />
+        </div>
+        <div class="pure-control-group">
+            <label for="model">модель</label>
+            <input type="text" name="model" value="" [(ngModel)]="_car.Model" />
+        </div>
+        <div class="pure-control-group">
+            <label for="year">год</label>
+            <input type="number" name="year" value="" [(ngModel)]="_car.Year" />
+        </div>
+        <div class="pure-control-group">
+            <button class="pure-button pure-button-primary" (click)="add(_car)">
+                add
+            </button>
+            <button class="pure-button pure-button-primary" (click)="testClick(_car)">
+                add Test
+            </button>
+        </div>
+        </div>
+    <div class="pure-u-1-2">
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>производитель</th>
+                    <th>модель</th>
+                    <th>год</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="pure-table-odd" *ngFor="let car of _cars">
+                    <td>{{car.Id}}</td>
+                    <td>{{car.Manufacturer}}</td>
+                    <td>{{car.Model}}</td>
+                    <td>{{car.Year}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
