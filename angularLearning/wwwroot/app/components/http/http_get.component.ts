@@ -19,7 +19,7 @@ export class HttpGetComponent {
     {
         this.http.get('/api/cars').subscribe((response: Response) => {
             if (response.ok)
-                this._cars = response.json();
+                this._cars = response.json() as Car[];
         }, (err) => {
             console.error(err);
         });

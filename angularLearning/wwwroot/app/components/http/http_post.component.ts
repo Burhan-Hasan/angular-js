@@ -26,16 +26,8 @@ export class HttpPostComponent {
         });
     }
 
-    testClick() {
-        this.http.post('/api/cars', {Id:4,Manufacturer:"BMW",Model:"M3",year:2000}).subscribe((response: Response) => {
-            this.loadData();
-        }, (err) => {
-            console.error(err);
-        });
-    }
-
     add(car: Car) {
-        this.http.post('/api/cars', car).subscribe((response: Response) => {
+        this.http.post('/api/cars', car).subscribe((response:    Response) => {
             this.loadData();
         }, (err) => {
             console.error(err);

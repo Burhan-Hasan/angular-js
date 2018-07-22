@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
+using Newtonsoft.Json.Serialization;
 
 namespace angularLearning
 {
@@ -24,7 +25,7 @@ namespace angularLearning
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMemoryCache();
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver()); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

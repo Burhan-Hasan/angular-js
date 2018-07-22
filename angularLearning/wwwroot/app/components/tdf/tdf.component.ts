@@ -17,7 +17,7 @@ export class TdfComponent
 
     showCar()
     {
-        this.carDetails = this.car.id + ' | ' + this.car.model + ' | ' + this.car.year
+        this.carDetails = this.car.Id + ' | ' + this.car.Model + ' | ' + this.car.Year
     }
 
     onSubmit()
