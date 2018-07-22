@@ -1,7 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent } from './index';
+import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent } from './index';
 
 @NgModule({
     imports: [
@@ -35,6 +35,11 @@ import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpG
                 path: 'http_post',
                 pathMatch: 'full',
                 component: HttpPostComponent
+            }
+            , {
+                path: 'headers_n_params',
+                pathMatch: 'full',
+                component: HeadersAndParamsComponent
             }
         ])
     ],
