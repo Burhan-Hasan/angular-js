@@ -8,3 +8,4 @@ export * from './components/mdf/mdf.component';
 export * from './components/http/http_get.component';
 export * from './components/http/http_post.component';
 export * from './components/http/headers_n_params.component';
+export * from './app2/components/cars/cars_list.component';
