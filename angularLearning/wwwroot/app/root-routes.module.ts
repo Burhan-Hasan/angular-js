@@ -1,7 +1,11 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent, CarsListComponent } from './index';
+import {
+    Example1Component, Example2Component, TdfComponent, MdfComponent
+    , HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent, CarsListComponent
+    , CarCreateEditComponent
+} from './index';
 
 @NgModule({
     imports: [
@@ -45,6 +49,16 @@ import { Example1Component, Example2Component, TdfComponent, MdfComponent, HttpG
                 path: 'app2',
                 pathMatch: 'full',
                 component: CarsListComponent
+            }
+            , {
+                path: 'app2/add',
+                pathMatch: 'full',
+                component: CarCreateEditComponent
+            }
+            , {
+                path: 'app2/edit/:id',
+                pathMatch: 'full',
+                component: CarCreateEditComponent
             }
         ])
     ],
