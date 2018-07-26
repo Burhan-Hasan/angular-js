@@ -1,7 +1,6 @@
 ﻿import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Car } from '../../entities/car';
-
 @Component({
     moduleId: module.id,
     templateUrl: 'http_post.component.html'

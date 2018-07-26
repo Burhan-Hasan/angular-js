@@ -1,1 +1,28 @@
-﻿Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+﻿<div class="pure-g">
+    <div class="pure-u-1-2 pure-form pure-form-aligned">
+        <div class="pure-control-group">
+            <label for="id">Id</label>
+            <input type="number" name="id" value="" [(ngModel)]="_car.Id" readonly/>
+        </div>
+        <div class="pure-control-group">
+            <label for="manufacturer">производитель</label>
+            <input type="text" name="manufacturer" value="" [(ngModel)]="_car.Manufacturer" />
+        </div>
+        <div class="pure-control-group">
+            <label for="model">модель</label>
+            <input type="text" name="model" value="" [(ngModel)]="_car.Model" />
+        </div>
+        <div class="pure-control-group">
+            <label for="year">год</label>
+            <input type="number" name="year" value="" [(ngModel)]="_car.Year" />
+        </div>
+        <div class="pure-control-group">
+            <button class="pure-button button-secondary" (click)="goBack()">
+                вернуться назад
+            </button>
+            <button class="pure-button pure-button-primary" (click)="addOrEdit(_car)">
+                сохранить
+            </button>
+        </div>
+    </div>
+</div>

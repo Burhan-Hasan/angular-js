@@ -21,6 +21,11 @@ export class CarsListComponent {
         this.router.navigate(["app2", "add"]);
     }
 
+    edit(car: Car)
+    {
+        this.router.navigate(["app2", "edit", car.Id]);
+    }
+
     ngOnInit()
     {
         this.http.get('/api/cars').subscribe((response: Response) => {

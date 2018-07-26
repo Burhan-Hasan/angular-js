@@ -1,6 +1,6 @@
 ﻿<h4>Cars</h4>
 
-<div class="pure-button pure-button-primary" (click)="add($event)">Добавить</div>
+<div class="pure-button pure-button-primary" (click)="add($event)" style="margin-bottom:10px;">Добавить</div>
 <div class="pure-g">
     <div class="pure-u-1-2">
         <table class="pure-table full-width">
@@ -21,7 +21,7 @@
                     <td>{{car.Model}}</td>
                     <td>{{car.Year}}</td>
                     <td>
-                        <div class="button-secondary pure-button button-xsmall">редактировать</div>
+                        <div class="button-secondary pure-button button-xsmall" (click)="edit(car)">редактировать</div>
                         <div class="button-error pure-button button-xsmall">удалить</div>
                     </td>
                 </tr>
