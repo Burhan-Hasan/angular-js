@@ -1,6 +1,6 @@
 ﻿import { Component } from '@angular/core';
 import { Car } from '../../../entities/car';
-import { Http, Response } from '@angular/http';
+import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,28 +11,32 @@ import { Router } from '@angular/router';
 export class CarsListComponent {
     _cars: Car[];
 
-    constructor(private http: Http,private router: Router)
-    {
+    constructor(private http: Http, private router: Router) {
 
     }
 
-    add()
-    {
+    add() {
         this.router.navigate(["app2", "add"]);
     }
 
-    edit(car: Car)
-    {
+    edit(car: Car) {
         this.router.navigate(["app2", "edit", car.Id]);
     }
 
-    ngOnInit()
-    {
+    delete(car: Car) {
+        this.http.delete('/api/cars/delete/' + car.Id).subscribe((res) => this.readData());
+    }
+
+    readData() {
         this.http.get('/api/cars').subscribe((response: Response) => {
             if (response.ok)
                 this._cars = response.json() as Car[];
         }, (err) => {
             console.error(err);
         });
+    }
+
+    ngOnInit() {
+        this.readData();
     }
 }

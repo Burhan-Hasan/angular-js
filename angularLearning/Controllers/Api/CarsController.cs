@@ -47,5 +47,18 @@ namespace angularLearning.Controllers
             int maxId = _cars == null ? 0 : _cars.Max(x => x.Id);
             return ++maxId;
         }
+
+        [Route("/api/cars/delete/{id}")]
+        public int Delete(int id)
+        {
+            var _cars = MemoryCache.Get("Cars") as List<Car>;
+            var _car = _cars.FirstOrDefault(x => x.Id == id);
+            if (_car != null)
+            {
+                _cars.Remove(_car);
+                MemoryCache.Set("Cars", _cars);
+            }
+            return id;
+        }
     }
 }
