@@ -22,6 +22,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
+        //������ ���� ������� ��� ������ ����������
         imports: [
             platform_browser_1.BrowserModule,
             root_routes_module_1.RootRouterModule,
@@ -30,7 +31,9 @@ AppModule = __decorate([
             http_1.HttpModule,
             app2_module_1.App2Module
         ],
+        //������ ���� ����������� � �������� � �������� �������� ������ ������
         declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],
+        //���������� � �������� ����������� ����������
         bootstrap: [index_1.AppComponent]
     })
 ], AppModule);

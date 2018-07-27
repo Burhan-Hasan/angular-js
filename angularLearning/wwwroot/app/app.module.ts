@@ -11,6 +11,7 @@ import { App2Module } from './app2/app2.module';
 import { RootRouterModule } from './root-routes.module';
 
 @NgModule({
+    //Список всех модулей для работы приложения
     imports: [
         BrowserModule,
         RootRouterModule,
@@ -19,7 +20,9 @@ import { RootRouterModule } from './root-routes.module';
         HttpModule,
         App2Module
     ],
+    //Список всех компонентов и сервисов с которыми работает данный модуль
     declarations: [AppComponent, HomeComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent],
+    //Компоненты с которыми запускается приложения
     bootstrap: [AppComponent]
 })
 export class AppModule { }
