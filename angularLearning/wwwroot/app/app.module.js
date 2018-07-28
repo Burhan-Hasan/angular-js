@@ -13,6 +13,7 @@ var index_1 = require("./index");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http"); //������ ��������� ��������� http ������. (������ ��� �������� � ����� http_get.component.ts)
 var app2_module_1 = require("./app2/app2.module");
+var component_features_module_1 = require("./modules/component_features/component_features.module");
 //import { routes } from './app.routes';
 var root_routes_module_1 = require("./root-routes.module");
 var AppModule = (function () {
@@ -29,7 +30,8 @@ AppModule = __decorate([
             forms_1.FormsModule,
             forms_1.ReactiveFormsModule,
             http_1.HttpModule,
-            app2_module_1.App2Module
+            app2_module_1.App2Module,
+            component_features_module_1.ComponentFeaturesModule
         ],
         //������ ���� ����������� � �������� � �������� �������� ������ ������
         declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],

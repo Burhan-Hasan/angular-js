@@ -6,7 +6,9 @@ import { AppComponent, Example1Component, Example2Component, TdfComponent, MdfCo
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http'; //модуль позволяет инжектить http сервис. (сервис был применен в файле http_get.component.ts)
 import { App2Module } from './app2/app2.module';
+import { ComponentFeaturesModule } from './modules/component_features/component_features.module';
 //import { routes } from './app.routes';
+
 
 import { RootRouterModule } from './root-routes.module';
 
@@ -18,7 +20,8 @@ import { RootRouterModule } from './root-routes.module';
         FormsModule,
         ReactiveFormsModule,
         HttpModule,
-        App2Module
+        App2Module,
+        ComponentFeaturesModule
     ],
     //Список всех компонентов и сервисов с которыми работает данный модуль
     declarations: [AppComponent, HomeComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent],
