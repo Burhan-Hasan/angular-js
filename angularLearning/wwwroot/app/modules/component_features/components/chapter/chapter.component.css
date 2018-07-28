@@ -7,3 +7,22 @@
 p {
     font-style: italic;
 }
+
+:host{
+    display:block; /*REQUIRED!!!*/
+    padding:25px;
+}
+
+:host-context(._border-dotted){
+    border:2px dotted #333;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+
+:host-context(._bg-light-gray) {
+    background-color:#f1f1f1;
+}
+
+:host /deep/ p {
+    font-style: italic;
+}
