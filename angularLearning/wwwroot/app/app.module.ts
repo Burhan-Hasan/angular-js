@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { AppComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent } from './index';
+import { AppComponent, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent } from './index';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http'; //модуль позволяет инжектить http сервис. (сервис был применен в файле http_get.component.ts)
 import { App2Module } from './app2/app2.module';
@@ -24,7 +24,7 @@ import { RootRouterModule } from './root-routes.module';
         ComponentFeaturesModule
     ],
     //Список всех компонентов и сервисов с которыми работает данный модуль
-    declarations: [AppComponent, HomeComponent, Example1Component, Example2Component, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent],
+    declarations: [AppComponent, HomeComponent, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent],
     //Компоненты с которыми запускается приложения
     bootstrap: [AppComponent]
 })

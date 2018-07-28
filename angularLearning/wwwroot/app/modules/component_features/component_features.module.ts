@@ -1,10 +1,10 @@
 ﻿import { NgModule } from '@angular/core';
 
-import { StylingComponent } from './components/styling/styling.component';
+import { StylingComponent, ChapterComponent } from './components/index';
 
 @NgModule({
     imports: [],
-    declarations: [StylingComponent],
+    declarations: [StylingComponent, ChapterComponent],
     bootstrap: []
 })
 export class ComponentFeaturesModule {

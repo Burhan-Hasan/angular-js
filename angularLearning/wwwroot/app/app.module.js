@@ -34,7 +34,7 @@ AppModule = __decorate([
             component_features_module_1.ComponentFeaturesModule
         ],
         //������ ���� ����������� � �������� � �������� �������� ������ ������
-        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.Example1Component, index_1.Example2Component, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],
+        declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],
         //���������� � �������� ����������� ����������
         bootstrap: [index_1.AppComponent]
     })

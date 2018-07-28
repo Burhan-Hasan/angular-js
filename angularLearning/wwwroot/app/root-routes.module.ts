@@ -1,8 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { RouterModule, Route } from '@angular/router';
 
-import {
-    Example1Component, Example2Component, TdfComponent, MdfComponent
+import {TdfComponent, MdfComponent
     , HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent, CarsListComponent
     , CarCreateEditComponent
 } from './index';
@@ -11,16 +10,6 @@ import { componentFeaturesRoutes } from './modules/component_features/module.rou
 
 let routesMain: Route[] = [
     {
-        path: 'example1',
-        pathMatch: 'full',
-        component: Example1Component
-    }
-    , {
-        path: 'example2',
-        pathMatch: 'full',
-        component: Example2Component
-    }
-    , {
         path: 'tdf',
         pathMatch: 'full',
         component: TdfComponent

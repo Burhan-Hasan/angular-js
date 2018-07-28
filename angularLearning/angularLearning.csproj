@@ -7,6 +7,9 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\app\app.component.css" />
+    <Content Remove="wwwroot\app\modules\component_features\component_features.component.js" />
+    <Content Remove="wwwroot\app\modules\component_features\component_features.component.js.map" />
+    <Content Remove="wwwroot\app\modules\component_features\component_features.component.ts" />
   </ItemGroup>
 
   <ItemGroup>

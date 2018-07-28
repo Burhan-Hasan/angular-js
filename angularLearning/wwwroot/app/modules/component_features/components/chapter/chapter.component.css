@@ -1,0 +1,9 @@
+﻿h2 {
+    color: #333;
+    border-left: 2px solid #333;
+    text-indent: 5px;
+}
+
+p {
+    font-style: italic;
+}
