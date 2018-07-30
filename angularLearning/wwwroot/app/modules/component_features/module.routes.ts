@@ -1,6 +1,6 @@
 ﻿import { Routes } from '@angular/router';
 
-import { StylingComponent, CountersComponent } from './components/index';
+import { StylingComponent, CountersComponent, TimerHostComponent } from './components/index';
 
 export const componentFeaturesRoutes: Routes = [
     {
@@ -10,5 +10,9 @@ export const componentFeaturesRoutes: Routes = [
     {
         path: "components/counters",
         component: CountersComponent
+    },
+    {
+        path: "components/custom-event",
+        component: TimerHostComponent
     }
 ];
