@@ -6,4 +6,8 @@
 })
 export class TimerHostComponent {
 
+    tick1(value: number) {
+        console.log(value);
+    }
+
 }

@@ -1,4 +1,8 @@
-﻿<span>
-    0
-</span>
-<button>Stop</button><button>Start</button>
+﻿<fieldset>
+    <legend>название:{{name}}, интервал :{{interval}}</legend>
+    <span>
+        {{value}}
+    </span>
+    <button class="pure-button button-secondary" (click)="stop()">Stop</button>
+    <button class="pure-button button-secondary" (click)="start()">Start</button>
+</fieldset>
