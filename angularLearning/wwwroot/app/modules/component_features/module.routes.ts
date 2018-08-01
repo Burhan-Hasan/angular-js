@@ -1,6 +1,6 @@
 ﻿import { Routes } from '@angular/router';
 
-import { StylingComponent, CountersComponent, TimerHostComponent } from './components/index';
+import { StylingComponent, CountersComponent, TimerHostComponent, AccessingToChildsComponent } from './components/index';
 
 export const componentFeaturesRoutes: Routes = [
     {
@@ -14,5 +14,9 @@ export const componentFeaturesRoutes: Routes = [
     {
         path: "components/custom-event",
         component: TimerHostComponent
+    },
+    {
+        path: "components/accessing-to-childs",
+        component: AccessingToChildsComponent
     }
 ];

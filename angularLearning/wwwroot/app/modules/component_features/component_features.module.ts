@@ -1,10 +1,19 @@
 ﻿import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { StylingComponent, ChapterComponent, ChapterContentComponent, CountersComponent, CounterComponent, TimerComponent, TimerHostComponent } from './components/index';
+
+import {
+    StylingComponent, ChapterComponent, ChapterContentComponent
+    , CountersComponent, CounterComponent, TimerComponent, TimerHostComponent
+    , AccessingToChildsComponent, BlockComponent
+} from './components/index';
 
 @NgModule({
-    imports: [],
-    declarations: [StylingComponent, ChapterComponent, ChapterContentComponent, CountersComponent, CounterComponent, TimerComponent, TimerHostComponent],
+    imports: [BrowserModule],
+    declarations: [StylingComponent, ChapterComponent, ChapterContentComponent
+        , CountersComponent, CounterComponent, TimerComponent, TimerHostComponent, BlockComponent
+        , AccessingToChildsComponent
+    ],
     bootstrap: []
 })
 export class ComponentFeaturesModule {
