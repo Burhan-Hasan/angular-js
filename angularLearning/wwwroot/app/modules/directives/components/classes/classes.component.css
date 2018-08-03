@@ -1,0 +1,12 @@
+﻿.red-border, .redBorder {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.gray-bg, .grayBackGround {
+    background-color: #808080;
+}
+
+.blue-font-color, .blueFontColor {
+    color: #0026ff;
+}

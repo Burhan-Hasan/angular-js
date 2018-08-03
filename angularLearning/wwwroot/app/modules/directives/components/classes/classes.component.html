@@ -1,1 +1,18 @@
-﻿Classes
+﻿Red border: <input type="checkbox" [(ngModel)]="style.redBorder" /><br />
+Gray back-ground: <input type="checkbox" [(ngModel)]="style.grayBackGround" /><br />
+Blue font color: <input type="checkbox" [(ngModel)]="style.blueFontColor" /><br />
+<br /><br /><br />
+<p [class.red-border]="style.redBorder"
+   [class.gray-bg]="style.grayBackGround"
+   [class.blue-font-color]="style.blueFontColor">
+    Hello World!
+</p>
+<br /><br /><br />
+<p [ngClass]="style">
+    Hello World!
+</p>
+
+<br /><br /><br />
+<p [ngClass]="['redBorder','blueFontColor grayBackGround']">
+    Hello World!
+</p>
