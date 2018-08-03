@@ -3,8 +3,7 @@
 @Component({
     moduleId: module.id,
     templateUrl: 'classes.component.html',
-    styleUrls: ['classes.component.css'],
-    inputs:['style']
+    styleUrls: ['classes.component.css']
 })
 export class ClassesComponent {
     style = {
