@@ -15,6 +15,7 @@ var http_1 = require("@angular/http"); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿
 var app2_module_1 = require("./app2/app2.module");
 var component_features_module_1 = require("./modules/component_features/component_features.module");
 var directives_module_1 = require("./modules/directives/directives.module");
+var services_module_1 = require("./modules/services/services.module");
 //import { routes } from './app.routes';
 var root_routes_module_1 = require("./root-routes.module");
 var AppModule = (function () {
@@ -33,7 +34,8 @@ AppModule = __decorate([
             http_1.HttpModule,
             app2_module_1.App2Module,
             component_features_module_1.ComponentFeaturesModule,
-            directives_module_1.DirectivesModule
+            directives_module_1.DirectivesModule,
+            services_module_1.ServicesModule
         ],
         //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],

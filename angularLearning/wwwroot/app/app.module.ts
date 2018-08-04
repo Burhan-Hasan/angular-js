@@ -8,6 +8,8 @@ import { HttpModule } from '@angular/http'; //модуль позволяет инжектить http се
 import { App2Module } from './app2/app2.module';
 import { ComponentFeaturesModule } from './modules/component_features/component_features.module';
 import { DirectivesModule } from './modules/directives/directives.module';
+import { ServicesModule } from './modules/services/services.module';
+
 //import { routes } from './app.routes';
 
 
@@ -23,7 +25,8 @@ import { RootRouterModule } from './root-routes.module';
         HttpModule,
         App2Module,
         ComponentFeaturesModule,
-        DirectivesModule
+        DirectivesModule,
+        ServicesModule
     ],
     //Список всех компонентов и сервисов с которыми работает данный модуль
     declarations: [AppComponent, HomeComponent, TdfComponent, MdfComponent, HttpGetComponent, HttpPostComponent, HeadersAndParamsComponent],
