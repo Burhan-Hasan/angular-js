@@ -1,4 +1,5 @@
 ﻿import { Component, Input } from '@angular/core';
+import { $ServiceCounter } from '../../services/index';
 
 @Component({
     moduleId: module.id,
@@ -8,6 +9,8 @@
 })
 export class Counter2Component
 {
+    constructor(private $serviceCounter: $ServiceCounter) { }
+
     name: string = 'Counter 2';
 
     @Input()
@@ -17,10 +20,12 @@ export class Counter2Component
     counterStep: number = 1;
 
     inc() {
-        this.value += this.counterStep;
+        this.$serviceCounter.inc();
+        this.value = this.$serviceCounter.value;
     }
 
     dec() {
-        this.value -= this.counterStep;
+        this.$serviceCounter.dec();
+        this.value = this.$serviceCounter.value;
     }
 }

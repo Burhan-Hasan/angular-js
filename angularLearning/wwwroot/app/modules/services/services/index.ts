@@ -1,0 +1,1 @@
+﻿export * from '../services/counter_service.component';
