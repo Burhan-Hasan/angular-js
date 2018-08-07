@@ -16,6 +16,7 @@ var app2_module_1 = require("./app2/app2.module");
 var component_features_module_1 = require("./modules/component_features/component_features.module");
 var directives_module_1 = require("./modules/directives/directives.module");
 var services_module_1 = require("./modules/services/services.module");
+var routing_module_1 = require("./modules/routing/routing.module");
 //import { routes } from './app.routes';
 var root_routes_module_1 = require("./root-routes.module");
 var AppModule = (function () {
@@ -35,7 +36,8 @@ AppModule = __decorate([
             app2_module_1.App2Module,
             component_features_module_1.ComponentFeaturesModule,
             directives_module_1.DirectivesModule,
-            services_module_1.ServicesModule
+            services_module_1.ServicesModule,
+            routing_module_1.RoutingModule
         ],
         //������ ���� ����������� � �������� � �������� �������� ������ ������
         declarations: [index_1.AppComponent, home_component_1.HomeComponent, index_1.TdfComponent, index_1.MdfComponent, index_1.HttpGetComponent, index_1.HttpPostComponent, index_1.HeadersAndParamsComponent],
