@@ -2,10 +2,12 @@
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'custom-directive-host.component.html'
+    templateUrl: 'custom-directive-host.component.html',
+    styles: ['.pressed { cursor:pointer }']
 })
 
-export class CustomDirectiveHostComponent
-{
-
+export class CustomDirectiveHostComponent {
+    onDelete() {
+        alert('Deleted!');
+    }
 }

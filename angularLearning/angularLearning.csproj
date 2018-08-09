@@ -10,6 +10,9 @@
     <Content Remove="wwwroot\app\modules\component_features\component_features.component.js" />
     <Content Remove="wwwroot\app\modules\component_features\component_features.component.js.map" />
     <Content Remove="wwwroot\app\modules\component_features\component_features.component.ts" />
+    <Content Remove="wwwroot\app\modules\directives\index.js" />
+    <Content Remove="wwwroot\app\modules\directives\index.js.map" />
+    <Content Remove="wwwroot\app\modules\directives\index.ts" />
   </ItemGroup>
 
   <ItemGroup>

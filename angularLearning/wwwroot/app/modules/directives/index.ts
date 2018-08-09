@@ -6,4 +6,3 @@ export * from './custom-directive/custom-directive-interaction.directive';
 export * from './custom-directive/passing-data.directive';
 export * from './custom-directive/repeat.directive';
 export * from './custom-directive/confirm.directive';
-export * from './custom-directive/host-binding.directive';
