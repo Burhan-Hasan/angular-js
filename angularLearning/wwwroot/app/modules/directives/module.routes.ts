@@ -1,5 +1,5 @@
 ﻿import { Routes } from '@angular/router';
-import { ClassesComponent, StylesComponent } from './components/index';
+import { ClassesComponent, StylesComponent, CustomDirectiveHostComponent } from './components/index';
 
 export const directivesRoutes: Routes = [
     {
@@ -9,5 +9,9 @@ export const directivesRoutes: Routes = [
     {
         path: 'directives/styles',
         component: StylesComponent
+    },
+    {
+        path: 'directives/custom-directives',
+        component: CustomDirectiveHostComponent
     }
 ];
