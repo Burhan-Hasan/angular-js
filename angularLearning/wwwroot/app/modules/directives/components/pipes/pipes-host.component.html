@@ -1,0 +1,8 @@
+﻿<input type="text" #txtValue [(ngModel)]="numbers" value="" />
+<br />
+<br />
+{{numbers | customPipe}}
+
+<br />
+<br />
+{{txtValue.value | customPipe}}
