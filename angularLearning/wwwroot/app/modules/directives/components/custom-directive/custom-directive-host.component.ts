@@ -7,6 +7,13 @@
 })
 
 export class CustomDirectiveHostComponent {
+
+    isVisible: boolean = true;
+
+    changeVisibility() {
+        this.isVisible = !this.isVisible;
+    }
+
     onDelete() {
         alert('Deleted!');
     }
